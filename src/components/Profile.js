@@ -42,7 +42,7 @@ class Profile extends Component {
 
     async componentDidMount() {
         const profile = await fetch('https://api.github.com/users/VicNeto');
-        const quote = await fetch('http://quotes.stormconsultancy.co.uk/random.json');
+        const quote = await fetch('/.netlify/functions/load-quote');
         const profileJSON = await profile.json();
         const quoteJSON = await quote.json();
 
