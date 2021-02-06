@@ -46,12 +46,17 @@ class Profile extends Component {
         const profileJSON = await profile.json();
         const quoteJSON = await quote.json();
 
-        if (profileJSON && quoteJSON) {
+        if (profileJSON) {
             this.setState({
                 profileData: profileJSON,
+                loading: false
+            });
+        }
+        if (quoteJSON) {
+            this.setState({
                 quoteData: quoteJSON,
                 loading: false
-            })
+            });
         }
     }
 
