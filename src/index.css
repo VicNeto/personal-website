@@ -1,4 +1,7 @@
-body {
+/* @import url('../node_modules/minstyle.io/css/scss/_browser.scss'); */
+@import url('../node_modules/chota/dist/chota.css');
+
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +13,82 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+:root {
+  /* --color-grey: #d0403c; */
 }
+
+body.dark {
+  --color-primary: #d76009;
+  --color-error: #d0403c;
+  --bg-color: #25282c;
+  --bg-secondary-color: #2a2640;
+  --font-color: #f5f5f5;
+  --color-grey: #d0403c;
+  --color-darkGrey: #777;
+  --color-success: #279418;
+  --color-blue: #87e3fd;
+
+  --browser-bg: #111417;
+  --browser-font-color: #ffffff;
+  --browser-bg-content: #25282c; 
+}
+
+.button.outline.success {
+  border-color: var(--color-success);
+  color: var(--color-success);
+}
+.button.outline.blue {
+  border-color: var(--color-blue);
+  color: var(--color-blue);
+}
+
+.icon.primary {
+  color: var(--color-primary);
+}
+.icon.error {
+  color: var(--color-error);
+}
+.icon.success {
+  color: var(--color-success);
+}
+.icon.secondary {
+  color: var(--color-secondary);
+}
+
+/* Browser from minstyle.io */
+/* VARIABLES */
+
+.ms-browser {
+  background-color: var(--browser-bg);
+  border: 4px solid var(--browser-bg);
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+  border-top-right-radius: 5px; }
+  .ms-browser .ms-tab-browser {
+    padding: 0.4rem 0.6rem; }
+    .ms-browser .ms-tab-browser .ms-dot {
+      display: inline-block;
+      height: 12px;
+      width: 12px;
+      background-color: #e1e1e1;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%; }
+      .ms-browser .ms-tab-browser .ms-dot.red {
+        background-color: #e04540; }
+      .ms-browser .ms-tab-browser .ms-dot.yellow {
+        background-color: #f9bf10; }
+      .ms-browser .ms-tab-browser .ms-dot.green {
+        background-color: #3ab656; }
+  .ms-browser .ms-content {
+    background-color: var(--browser-bg-content);
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 10px; }
